@@ -1,0 +1,11 @@
+/*
+This file is for styles specific to Internet Explorer
+*/
+
+#face {
+  opacity: 0;
+  transition: opacity 16s;
+}
+  #face:hover {
+    opacity: 1;
+  }
