@@ -10,23 +10,27 @@
     <meta name="description" content="Chromatics">
     <meta name="author" content="Nick Ferrari">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script>
+		var b = document.documentElement;
+		b.setAttribute('data-useragent',  navigator.userAgent);
+		b.setAttribute('data-platform', navigator.platform );
+		
+		// IE 10 == Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0)
+	</script>
 
 
     <!-- Styles
     ========================================================= -->
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous"><!-- icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"><!-- icons -->
 
-
-    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css"><!-- CSS -->
+	<link rel="stylesheet" href="css/styles.css"><!-- CSS -->
     <!--[if IE]>
-      <link rel="stylesheet"    href="ie.css" />
+      <link rel="stylesheet" type="text/css" href="css/ie.css" />
     <![endif]-->
 
-    <link href="https://fonts.googleapis.com/css?family=Allerta+Stencil|Roboto+Mono|Rokkitt" rel="stylesheet"><!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Allerta+Stencil%7CRoboto+Mono%7CRokkitt" rel="stylesheet"><!-- fonts -->
 
 
   </head>
@@ -34,210 +38,205 @@
   <!-- Main Content
     ========================================================= -->
 
-  <body class="">
+  <body>
 
-    <img src="images/logo.png" alt="logo" id="top" class="img-fluid" width="300" height="102">
+    <img src="images/logo.png" alt="logo" id="home" class="img-fluid" width="300" height="102">
 
     <nav id="mainNav" class="navbar">
-      <button type="button" tabindex="1" class="navbar-toggler" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">&#9776;</button>
-      <div class="collapse navbar-collapse justify-content-between" id="collapsibleNavbar">
-        <ul class="navbar-nav">
-          <li class="nav-item">
+      <button type="button" tabindex="1" class="navbar-toggler" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="collapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation">&#9776;</button>
+      <div class="collapse navbar-collapse navbar-nav justify-content-around" id="collapsibleNavbar">
+            <a href="#home" title="Home" class="nav-link">Home</a>
             <a href="#albums" title="Albums" class="nav-link">Albums</a>
-          </li>
-          <li class="nav-item">
             <a href="#about" title="About Us" class="nav-link">About Us</a>
-          </li>
-          <li class="nav-item">
             <a href="#news" title="Newsletter" class="nav-link">Newsletter</a>
-          </li>
-        </ul>
       </div>
     </nav>
 
     <img src="images/eyes-sans-face.jpg" id="face" class="mx-auto d-block img-fluid" alt="background" width="592" height="600">
 
-    <article class="container col-11">
+    <article class="container">
 
-
-    <div  class="container">
-      <h1>Chromatics</h1>
-    </div>
-
-      <div  class="container">
-        <h2>Albums</h2>
+      <div class="container d-flex">
+        <h1 class="mx-auto mb-5">Chromatics</h1>
       </div>
 
-      <section id="albums"  class="row">
 
-        <!--Album 1-->
 
-        <div class="col-md card">
-          <h3 class="card title">Chrome Rats vs. Basement Rutz</h3>
-          <div class="album card-body">
-            <img class="card-img-top img-fluid" src="images/album1.jpg" alt="Chrome Rats vs. Basement Rutz" width="300" height="300">
-            <h4 class="card-title">Track List</h4>
-            <ol>
-              <li><p class="card-text">NBA</p></li>
-              <li><p class="card-text">Washed Up On A Beach Of Infants</p></li>
-              <li><p class="card-text">Lithium Jaws</p></li>
-              <li><p class="card-text">Copper Fence</p></li>
-              <li><p class="card-text">Slant</p></li>
-              <li><p class="card-text">Hannah's Song</p></li>
-              <li><p class="card-text">Felt Tongue</p></li>
-              <li><p class="card-text">Skill Fall</p></li>
-              <li><p class="card-text">Jungle</p></li>
-              <li><p class="card-text">Two Of Every Creature</p></li>
-              <li><p class="card-text">Fertile Future</p></li>
-              <li><p class="card-text">Left Shoulder</p></li>
-              <li><p class="card-text">Cave Care</p></li>
-              <li><p class="card-text">Plastic Kross</p></li>
-              <li><p class="card-text">Shrieking Rows</p></li>
-              <li><p class="card-text">Untitled</p></li>
-            </ol>
-          </div> <!--Album 1-->
-        </div>
+      <section class="container row">
 
-        <!--Album 2-->
+      <div class="container">
+        <hr>
+        <h2 id="albums">Albums</h2>
+        <hr>
+      </div>
 
-        <div class="col-md card">
-          <h3 class="card-title">Plaster Hounds</h3>
-          <div class="album card-body">
-            <img class="card-img-top img-fluid" src="images/album2.jpg" alt="Plaster Hounds" width="300" height="300">
-            <h4>Track List</h4>
-            <ol>
-              <li><p class="card-text">Surrogate</p></li>
-              <li><p class="card-text">Garden</p></li>
-              <li><p class="card-text">Jesus</p></li>
-              <li><p class="card-text">Three Hearts (WASP)</p></li>
-              <li><p class="card-text">Vol. II</p></li>
-              <li><p class="card-text">Chalk Dust (Holy Water)</p></li>
-              <li><p class="card-text">24/23/22/21</p></li>
-              <li><p class="card-text">Monarch</p></li>
-              <li><p class="card-text">Ice Hatchets</p></li>
-              <li><p class="card-text">Program</p></li>
-            </ol>
+        <div class="col-lg card mx-auto">
+          <h3 class="mt-2">Chrome Rats vs. Basement Rutz</h3>
+          <img class="mb-2 card-img-top img-fluid rounded" src="images/album1.jpg" alt="Chrome Rats vs. Basement Rutz" width="150" height="150">
+          <div class="card-title">
+            <h4 class="d-inline-block">Tracks</h4>
+            <button class="dropdown-toggle" type="button" data-toggle="collapse" data-target="#collapseTracks1" aria-expanded="false" aria-controls="collapseTracks1"></button>
+          </div>
+          <div class="tracks collapse" id="collapseTracks1">
+            <p class="card-text songs">NBA</p>
+            <p class="card-text songs">Washed Up On A Beach Of Infants</p>
+            <p class="card-text songs">Lithium Jaws</p>
+            <p class="card-text songs">Copper Fence</p>
+            <p class="card-text songs">Slant</p>
+            <p class="card-text songs">Hannah's Song</p>
+            <p class="card-text songs">Felt Tongue</p>
+            <p class="card-text songs">Skill Fall</p>
+            <p class="card-text songs">Jungle</p>
+            <p class="card-text songs">Two Of Every Creature</p>
+            <p class="card-text songs">Fertile Future</p>
+            <p class="card-text songs">Left Shoulder</p>
+            <p class="card-text songs">Cave Care</p>
+            <p class="card-text songs">Plastic Kross</p>
+            <p class="card-text songs">Shrieking Rows</p>
+            <p class="card-text songs">Untitled</p>
+          </div>
+        </div><!--Album 1 -->
+
+        <div class="col-lg card mx-auto">
+          <h3 class="mt-2 br">Plaster Hounds</h3>
+          <img class="mb-2 card-img-top img-fluid rounded" src="images/album2.jpg" alt="Plaster Hounds" width="150" height="150">
+          <div class="card-title">
+            <h4 class="d-inline-block">Tracks</h4>
+            <button class="dropdown-toggle" type="button" data-toggle="collapse" data-target="#collapseTracks2" aria-expanded="false" aria-controls="collapseTracks2"></button>
+          </div>
+          <div class="tracks collapse" id="collapseTracks2">
+            <p class="card-text songs">Surrogate</p>
+            <p class="card-text songs">Garden</p>
+            <p class="card-text songs">Jesus</p>
+            <p class="card-text songs">Three Hearts (WASP)</p>
+            <p class="card-text songs">Vol. II</p>
+            <p class="card-text songs">Chalk Dust (Holy Water)</p>
+            <p class="card-text songs">24/23/22/21</p>
+            <p class="card-text songs">Monarch</p>
+            <p class="card-text songs">Ice Hatchets</p>
+            <p class="card-text songs">Program</p>
           </div>
         </div> <!--Album 2-->
 
-        <!--Album 3-->
-
-        <div class="col-md card">
-          <h3 class="card-title">Night Drive</h3>
-          <div class="album card-body">
-            <img class="card-img-top img-fluid" src="images/album3.jpg" alt="Night Drive" width="300" height="300">
-            <h4>Track List</h4>
-            <ol>
-              <li><p class="card-text">The Telephone Call</p></li>
-              <li><p class="card-text">Night Drive</p></li>
-              <li><p class="card-text">I Want Your Love</p></li>
-              <li><p class="card-text">Running Up That Hill</p></li>
-              <li><p class="card-text">Killing Spree</p></li>
-              <li><p class="card-text">Healer</p></li>
-              <li><p class="card-text">Mask</p></li>
-              <li><p class="card-text">Tomorrow Is So Far Away</p></li>
-              <li><p class="card-text">Let's Make This A Moment To Remember</p></li>
-              <li><p class="card-text">Tick Of The Clock</p></li>
-            </ol>
+        <div class="col-lg card mx-auto">
+          <h3 class="mt-2 br">Night Drive</h3>
+          <img class="mb-2 card-img-top img-fluid rounded" src="images/album3.jpg" alt="Night Drive" width="150" height="150">
+          <div class="card-title">
+            <h4 class="d-inline-block">Tracks</h4>
+            <button class="dropdown-toggle" type="button" data-toggle="collapse" data-target="#collapseTracks3" aria-expanded="false" aria-controls="collapseTracks3"></button>
+          </div>
+          <div class="tracks collapse" id="collapseTracks3">
+            <p class="card-text songs">The Telephone Call</p>
+            <p class="card-text songs">Night Drive</p>
+            <p class="card-text songs">I Want Your Love</p>
+            <p class="card-text songs">Running Up That Hill</p>
+            <p class="card-text songs">Killing Spree</p>
+            <p class="card-text songs">Healer</p>
+            <p class="card-text songs">Mask</p>
+            <p class="card-text songs">Tomorrow Is So Far Away</p>
+            <p class="card-text songs">Let's Make This A Moment To Remember</p>
+            <p class="card-text songs">Tick Of The Clock</p>
           </div>
         </div> <!--Album 3-->
 
-        <!--Album 4-->
-
-        <div class="col-md card">
-          <h3 class="card-title">Kill for Love</h3>
-          <div class="album card-body">
-            <img class="card-img-top img-fluid" src="images/album4.jpg" alt="Kill for Love" width="300" height="300">
-            <h4>Track List</h4>
-            <ol>
-              <li><p class="card-text">Into the Black</p></li>
-              <li><p class="card-text">Kill for Love</p></li>
-              <li><p class="card-text">Back from the Grave</p></li>
-              <li><p class="card-text">The Page</p></li>
-              <li><p class="card-text">Lady</p></li>
-              <li><p class="card-text">These Streets Will Never Look the Same</p></li>
-              <li><p class="card-text">Broken Mirrors</p></li>
-              <li><p class="card-text">Candy</p></li>
-              <li><p class="card-text">The Eleventh Hour</p></li>
-              <li><p class="card-text">Running from the Sun</p></li>
-              <li><p class="card-text">Dust to Dust</p></li>
-              <li><p class="card-text">Birds of Paradise</p></li>
-              <li><p class="card-text">A Matter of Time</p></li>
-              <li><p class="card-text">At Your Door</p></li>
-              <li><p class="card-text">There's a Light Out on the Horizon</p></li>
-              <li><p class="card-text">The River</p></li>
-            </ol>
+        <div class="col-lg card mx-auto">
+          <h3 class="mt-2 br">Kill for Love</h3>
+          <img class="mb-2 card-img-top img-fluid rounded" src="images/album4.jpg" alt="Kill for Love" width="150" height="150">
+          <div class="card-title">
+            <h4 class="d-inline-block">Tracks</h4>
+            <button class="dropdown-toggle" type="button" data-toggle="collapse" data-target="#collapseTracks4" aria-expanded="false" aria-controls="collapseTracks4"></button>
+          </div>
+          <div class="tracks collapse" id="collapseTracks4">
+            <p class="card-text songs">Into the Black</p>
+            <p class="card-text songs">Kill for Love</p>
+            <p class="card-text songs">Back from the Grave</p>
+            <p class="card-text songs">The Page</p>
+            <p class="card-text songs">Lady</p>
+            <p class="card-text songs">These Streets Will Never Look the Same</p>
+            <p class="card-text songs">Broken Mirrors</p>
+            <p class="card-text songs">Candy</p>
+            <p class="card-text songs">The Eleventh Hour</p>
+            <p class="card-text songs">Running from the Sun</p>
+            <p class="card-text songs">Dust to Dust</p>
+            <p class="card-text songs">Birds of Paradise</p>
+            <p class="card-text songs">A Matter of Time</p>
+            <p class="card-text songs">At Your Door</p>
+            <p class="card-text songs">There's a Light Out on the Horizon</p>
+            <p class="card-text songs">The River</p>
           </div>
         </div> <!--Album 4-->
 
-
       </section> <!--Albums-->
 
-      <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-          <h5>Find us on...</h5>
-          <div>
-            <ul>
-              <li><a href ="https://www.youtube.com/channel/UC6bu-FUO1gupWDZ6_VG6ckw" class="youtube"><i class="fab fa-youtube"></i></a></li>
-              <li><a href ="https://open.spotify.com/artist/4tOVIRjlWWfR1RrAxyRqTE?si=rWk0iZHyQbSQ7uvi0-5S8Q" class="spotify"><i class="fab fa-spotify"></i></a></li>
-              <li><a href ="https://itunes.apple.com/us/artist/chromatics/6122886" class="itunes"><i class="fab fa-itunes"></i></a></li>
-              <li><a href ="https://play.google.com/music/r/m/Afqdpidjjinmhzmak5dl47n32yu?t=Chromatics" class="googlePlay"><i class="fab fa-google-play"></i></a></li>
-            </ul>
-          </div>
+        <div class="container d-inline-block w-auto mb-4">
+          <h4 class="listen">Listen on...</h4>
+          <a href ="https://www.youtube.com/channel/UC6bu-FUO1gupWDZ6_VG6ckw" class="icon"><i class="fab fa-youtube fa-2x"></i></a>
+          <a href ="https://open.spotify.com/artist/4tOVIRjlWWfR1RrAxyRqTE?si=rWk0iZHyQbSQ7uvi0-5S8Q" class="icon"><i class="fab fa-spotify fa-2x"></i></a>
+          <a href ="https://itunes.apple.com/us/artist/chromatics/6122886" class="icon"><i class="fab fa-itunes fa-2x"></i></a>
+          <a href ="https://play.google.com/music/r/m/Afqdpidjjinmhzmak5dl47n32yu?t=Chromatics" class="icon"><i class="fab fa-google-play fa-2x"></i></a>
         </div>
-      </div>
 
-      <h2>About Us</h2>
+      <section class="container row">
 
-      <section id="about">
+        <div class="container">
+          <hr>
+          <h2 id="about">About Us</h2>
+          <hr>
+        </div>
 
-        <div class="ruth ">
-          <img src="ruth.png" alt="Ruth Radelet">
-          <h4>Ruth Radelet</h4>
-          <p class="bio">Born in Portland, Oregon, Ruth Radelet has been the lead vocalist for Chromatics since debuting on their third album, <i>Night Drive</i>. Her inspiration comes from the likes of Tom Waits, Bob Dylan, and Kris Kristofferson. <a href="https://www.huffpost.com/entry/ruth-radelet-chromatic-kill-for-love_b_2006068" title="Source">[1]</a></p>
+
+        <div class="col-lg card mx-auto">
+          <img class="card-img-top img-fluid rounded" src="images/ruth.jpg" width="150" height="150" alt="Ruth Radelet">
+          <h3 class="mt-2">Ruth Radelet</h3>
+          <p class="bio">Born in Portland, Oregon, Ruth has been the lead vocalist for Chromatics since debuting on their third album, <i>Night Drive</i>. Her inspiration comes from the likes of Tom Waits, Bob Dylan, and Kris Kristofferson. <a href="https://www.huffpost.com/entry/ruth-radelet-chromatic-kill-for-love_b_2006068" title="Source">[1]</a></p>
         </div><!-- ruth -->
 
-        <div class="adam ">
-          <img src="adam.png" alt="Adam Miller">
-          <h4>Adam Miller</h4>
-          <p class="bio">Not only does Adam Miller do double duty on guitar and vocals, he is also Chromatics' sole consistent member. He formed the band in 2001 with a completely different lineup than what we see today. Band members fluxuated until 2005, when the current group --and their signature, melancholy sound-- came together.</p>
+        <div class="col-lg card mx-auto">
+          <img class="card-img-top img-fluid rounded" src="images/adam.jpg" width="150" height="150" alt="Adam Miller">
+          <h3 class="mt-2">Adam Miller</h3>
+          <p class="bio">Adam does double duty on guitar and vocals as Chromatics' sole consistent member. He formed the band in 2001 with a completely different lineup than what we see today. Band members fluxuated until 2005, when the current group --and their signature, melancholy sound-- came together. <a href="https://en.wikipedia.org/wiki/Chromatics_(band)" title="Source">[2]</a></p>
         </div><!-- adam -->
 
-        <div class="nat ">
-          <img src="adam.png" alt="Nat Walker">
-          <h4>Nat Walker</h4>
-          <p class="bio">On drums and synthesizer, Nat Walker is crucial to the electronic sound of Chromatics, frequently working with sister-acts Glass Candy and Desire as well.</p>
+        <div class="col-lg card mx-auto">
+          <img class="card-img-top img-fluid rounded" src="images/nat.jpg" width="150" height="150" alt="Nat Walker">
+          <h3 class="mt-2">Nat Walker</h3>
+          <p class="bio">On drums and synthesizer, Nat is crucial to the electronic sound of Chromatics, frequently working with sister-acts Glass Candy and Desire as well. <a href="https://en.wikipedia.org/wiki/Chromatics_(band)" title="Source">[2]</a></p>
         </div><!-- nat -->
 
-        <div class="johnny ">
-          <img src="adam.png" alt="Johnny Jewel">
-          <h4>Johnny Jewel</h4>
-          <p class="bio">Not only is Johnny Jewel an active member of Chromatics, he also owns and operates their record label, <a href="https://italiansdoitbetter.com/" title="Italians Do It Better">Italians Do It Better</a>, which releases music from all of his groups, including Glass Candy, Desire and Symmetry.</p>
+        <div class="col-lg card mx-auto">
+          <img class="card-img-top img-fluid rounded" src="images/johnny.jpg" width="150" height="150" alt="Johnny Jewel">
+          <h3 class="mt-2">Johnny Jewel</h3>
+          <p class="bio">Not only is Johnny an active member of Chromatics, he also owns and operates their record label, <a href="https://italiansdoitbetter.com/" title="Italians Do It Better">Italians Do It Better</a>, which releases music from all of his associated groups, including Glass Candy, Desire and Symmetry. <a href="https://pitchfork.com/features/article/9616-into-the-black-johnny-jewels-dark-disco-empire/" title="Source">[3]</a></p>
         </div><!-- johnny -->
 
       </section>
 
 
-      <h5>Sign Up for Our Newsletter!</h5>
 
-      <section id="form">
-        <form id="news">
+      <section id="form" class="container">
+
+        <hr>
+        <h2 id="news">Sign Up for Our Newsletter!</h2>
+        <hr>
+
+        <form>
           <fieldset class="name">
-            <div class="form-group">
-              <label for="first-name">First name&colon;</label>
-              <input type="text" placeholder="e.g. Armin" id="first-name">
+            <legend>Name</legend>
+            <div class="form-group row">
+              <label class="col-2" for="first-name">First: </label>
+              <input class="form-control col-5 d-inline-block w-auto" type="text" placeholder="e.g. Armin" id="first-name">
             </div><!-- first name -->
-            <div class="form-group">
-              <label for="last-name">Last name&colon;</label>
-              <input type="text" placeholder="e.g. Tamzarian" id="last-name">
+            <div class="form-group row">
+              <label class="col-2" for="last-name">Last: </label>
+              <input class="form-control col-5 d-inline-block w-auto" type="text" placeholder="e.g. Tamzarian" id="last-name">
             </div><!-- last name -->
           </fieldset>
 
           <fieldset class="bday">
-            <legend>Birthday:</legend>
-            <div class="form-group">
-              <label for="month">month</label>
-              <select name="month" id="month">
+            <legend>Birthday</legend>
+            <div class="form-group row">
+              <label class="col-2" for="month">Month: <span class="req"> *</span></label>
+              <select class="form-control col-5 d-inline-block w-auto" name="month" id="month" required>
                 <option value="" disabled selected>Month</option>
                 <option value="January">January</option>
                 <option value="February">February</option>
@@ -252,64 +251,30 @@
                 <option value="November">November</option>
                 <option value="December">December</option>
               </select>
-              <p>This is a required field.</p>
             </div><!-- month -->
-            <div class="form-group">
-              <label for="day">Day</label>
-              <select name="day" id="day">
-                <option value="" disabled selected>Day</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-                <option value="11">11</option>
-                <option value="12">12</option>
-                <option value="13">13</option>
-                <option value="14">14</option>
-                <option value="15">15</option>
-                <option value="16">16</option>
-                <option value="17">17</option>
-                <option value="18">18</option>
-                <option value="19">19</option>
-                <option value="20">20</option>
-                <option value="21">21</option>
-                <option value="22">22</option>
-                <option value="23">23</option>
-                <option value="24">24</option>
-                <option value="25">25</option>
-                <option value="26">26</option>
-                <option value="27">27</option>
-                <option value="28">28</option>
-                <option value="29">29</option>
-                <option value="30">30</option>
-                <option value="31">31</option>
-              </select>
-              <p>This is a required field.</p>
+            <div class="form-group row">
+              <label class="col-2" for="day">Day: <span class="req"> *</span></label>
+              <input class="form-control col-5 d-inline-block w-auto" type="number" id="day" name="day" placeholder="Day" min="01" max="31" required>
             </div><!-- day -->
-            <div class="form-group">
-              <label for="year">Year</label>
-              <input type="number" id="year" name="year" placeholder="Year" min="1900" max="2006" required><p>This is a required field.</p>
+            <div class="form-group row">
+              <label class="col-2" for="year">Year: <span class="req"> *</span></label>
+              <input class="form-control col-5 d-inline-block w-auto" type="number" id="year" name="year" placeholder="Year" min="1900" max="2006" required>
             </div><!-- year -->
           </fieldset><!-- birthday -->
 
           <fieldset class="address">
-            <div class="form-group">
-              <label for="address">Address:</label>
-              <input type="text" id="address" name="address" required><p>This is a required field</p>
-            </div><!-- address -->
-            <div class="form-group">
-              <label for="city">City:</label>
-              <input type="text" id="city" name="city" required><p>This is a required field</p>
+            <legend>Address: </legend>
+            <div class="form-group row">
+              <label class="col-2" for="street">Street: </label>
+              <input class="form-control col-5 d-inline-block w-auto" type="text" placeholder="330 Pikeland Ave" id="street" name="street">
+            </div><!-- street -->
+            <div class="form-group row">
+              <label class="col-2" for="city">City: </label>
+              <input class="form-control col-5 d-inline-block w-auto" type="text" placeholder="Springfield" id="city" name="city">
             </div><!-- city -->
-            <div class="form-group">
-              <label  for="state">State:</label>
-              <select id="state" name="state" required>
+            <div class="form-group row">
+              <label  class="col-2" for="state">State: </label>
+              <select id="state" class="form-control col-5 d-inline-block w-auto" name="state">
                 <option value="" disabled selected>Select</option>
                 <option value="AL">Alabama</option>
                 <option value="AK">Alaska</option>
@@ -363,28 +328,35 @@
                 <option value="WI">Wisconsin</option>
                 <option value="WY">Wyoming</option>
               </select>
-              <p class="form-text">This is a required field.</p>
             </div><!-- state -->
-            <div class="form-group">
-              <label for="zip">Zipcode:</label>
-              <input type="text" id="zip" name="zip" required><p>This is a required field</p>
+            <div class="form-group row">
+              <label class="col-2" for="zip">Zipcode: <span class="req"> *</span></label>
+              <input class="form-control col-5 d-inline-block w-auto" type="text" id="zip" name="zip" placeholder="12345" required>
             </div><!-- zipcode -->
           </fieldset><!-- address -->
 
           <fieldset class="email">
-            <div class="form-group">
-              <label for="email">Your email&colon;</label>
-              <input type="email" placeholder="example123@mailbox.com" id="email">
+            <div class="form-group row">
+              <label class="col-2" for="email">Email: <span class="req"> *</span></label>
+              <input class="form-control col-5 d-inline-block w-auto" type="email" placeholder="example123@mailbox.com" id="email" required>
             </div><!-- email -->
             <div class="form-group">
               <p>Would you prefer HTML or plain text communications?</p>
-              <label><input type="radio" name="html" checked> HTML</label>
-              <label><input type="radio" name="text"> Plain Text</label>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="eFormat" id="htmlCheck" value="option1" checked>
+                <label class="form-check-label" for="htmlCheck">HTML</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="eFormat" id="textCheck" value="option2">
+                <label class="form-check-label" for="textCheck">Plain Text</label>
+              </div>
             </div><!-- preference -->
             <div class="form-group">
-             <label for="agree">Do you agree to the <a href="terms.html">Terms and Conditions</a>?<input type="checkbox" id="agree" name="agree" required=""></label>
+             <label for="agree">Do you agree to the <a href="terms.html">Terms and Conditions</a>?</label>
+             <input type="checkbox" id="agree" name="agree" required>
             </div><!-- terms -->
-              <input type="submit" value="Sign up!" id="submit" name="submit">
+              <input class="btn mr-5" type="submit" value="Sign up!" id="submit" name="submit">
+              <p class="d-inline-block w-auto ml-5"><span class="req">* </span>required field</p>
           </fieldset>
 
         </form>
@@ -392,16 +364,21 @@
 
     </article>
 
-    <footer  class="">
-      <p class="ft">&copy; Francis Tuttle 2019</p>
-      <p class="me">Website by <a href="http://site12.wdd.francistuttle.edu/index.html">Nicholas Ferrari</a></p>
-      <a href="https://twitter.com/CaptainFerrari" title="twitter"><i class="fab fa-twitter"></i></a>
-      <a href="www.linkedin.com/in/njferrari14" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-      <a href="https://github.com/iceulon" title="github"><i class="fab fa-github"></i></a>
+    <hr>
+
+    <footer  class="container">
+      <p class="float-left">&copy; Francis Tuttle 2019</p>
+      <a href="sources.html" class="float-left ml-2">Sources</a>
+      <div class="float-right justify-content-around">
+        <p class="d-inline-block">Website by <a href="http://site12.wdd.francistuttle.edu/index.html">Nicholas Ferrari</a></p>
+        <a class="d-inline-block" href="https://twitter.com/CaptainFerrari" title="twitter"><i class="fab fa-twitter"></i></a>
+        <a class="d-inline-block" href="https://linkedin.com/in/njferrari14" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a class="d-inline-block" href="https://github.com/iceulon" title="github"><i class="fab fa-github"></i></a>
+    </div>
     </footer>
 
-  <script src="js/jquery-3.4.1.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.min-3.4.1.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
   </body>
 </html>

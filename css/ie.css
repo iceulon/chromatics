@@ -9,3 +9,6 @@ This file is for styles specific to Internet Explorer
   #face:hover {
     opacity: 1;
   }
+.card-img-top {
+	width: auto !important;
+}
