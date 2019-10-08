@@ -3243,7 +3243,7 @@ input[type=submit].btn-block {
     display: inline-block;
     margin-left: .255em;
     vertical-align: .255em;
-    content: 'http://www.w3.org/2000/svg';
+    content: '';
     border-top: .3em solid;
     border-right: .3em solid transparent;
     border-bottom: 0;
@@ -10501,7 +10501,7 @@ h4 {
 .songs {
     font-family: 'Roboto Mono', monospace;
     color: #fbeabf;
-    border-bottom: 1px solid #fbeabf
+    border-bottom: 1px solid #fbeabf;
 }
 
 .form-check-input {
